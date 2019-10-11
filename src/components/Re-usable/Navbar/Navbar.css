@@ -37,33 +37,3 @@ a.nav-link:link, a.nav-link:visited {
 a.nav-link:hover, a.nav-link:active {
     color: #8769ff!important;
 }
-
-
-.navBtn {
-    margin-left: auto;
-    padding: 5px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: #8769ff;
-    border: 1px solid #8769ff;
-    color: white;
-    transition: all .4s;
-    box-shadow: 0 15px 15px -10px #a593eb;
-}
-
-
-
-.navBtn:hover {
-    background-color: #380af2ce;
-    border-color: #370afc42;
-    transform: translateY(-1px);
-    box-shadow: 0 .75rem 2rem rgba(0,0,0, 0.4);
-}
-
-.navBtn:active {
-    background-color: #380af2ce;
-    border-color: #370afc42;
-    transform: translateY(0);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
-}
-

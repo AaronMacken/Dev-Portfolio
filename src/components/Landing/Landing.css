@@ -1,0 +1,16 @@
+.col-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.col-1-of-2 {
+    width: 40%;
+}
+
+.rowWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}

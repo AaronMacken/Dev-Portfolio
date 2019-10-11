@@ -1,0 +1,16 @@
+.SubContent--contentWrapper {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    height: 6rem;
+}
+
+.SubContent--contentWrapper__head {
+    margin-bottom: 1.5rem;
+}
+
+.SubContent--contentWrapper__body {
+    line-height: 1.7;
+    font-size: 120%;
+}

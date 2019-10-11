@@ -1,5 +1,7 @@
 import React from "react";
+import PurpleButton from "../Buttons/PurpleButton/PurpleButton";
 import "./Navbar.css";
+
 
 function Navbar() {
   return (
@@ -18,7 +20,7 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
+          <li className="nav-item">
             <a className="nav-link" href="/#">
               About <span className="sr-only">(current)</span>
             </a>
@@ -35,7 +37,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <button className="navBtn">Contact</button>
+        <PurpleButton text={"Contact"} />
       </div>
     </nav>
   );

@@ -8,7 +8,7 @@ export default class Title extends Component {
 
         return (
             <div>
-                <h2>{text}</h2>
+                <h2 className="title" id="myTitle">{text}</h2>
             </div>
         )
     }

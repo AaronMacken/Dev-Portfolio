@@ -1,0 +1,17 @@
+.titleAlt {
+    font-size: 170%;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin: 4rem auto 3rem;
+}
+
+.titleAlt::after {
+    display: block;
+    height: 2px;
+    background-color: #ff0200;
+    content: " ";
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}

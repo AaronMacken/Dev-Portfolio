@@ -1,4 +1,5 @@
 import React from "react";
+import OrangeButton from "../Buttons/OrangeButton/OrangeButton";
 import "./Jumbo.css";
 
 function Jumbo({ title, subTitle, btnText }) {
@@ -7,9 +8,7 @@ function Jumbo({ title, subTitle, btnText }) {
         <div className="jumbotron-contentWrapper">
           <h1 className="display-4">{title}</h1>
           <p className="lead">{subTitle}</p>
-          <button className="jumboBtn" href="#" role="button">
-            {btnText}
-          </button>
+          <button className="jumboBtn">{btnText}</button>
         </div>
     </header>
   );

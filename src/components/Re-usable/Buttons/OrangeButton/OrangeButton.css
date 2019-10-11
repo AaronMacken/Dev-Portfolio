@@ -1,0 +1,28 @@
+.orangeButton {
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ff3935;
+    border: 1px solid #ff3935;
+    color: #fff;
+    transition: all .4s;
+    box-shadow: 0 1rem 1rem -10px rgba(0,0,0,.4);
+    
+    letter-spacing: 1px;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.orangeButton:hover {
+    background-color: #ff0200;
+    border-color: #ff0200;
+    transform: translateY(-1px);
+    box-shadow: 0 .75rem 2rem #f84f4c;
+}
+
+.orangeButton:active {
+    background-color: #ff0200;
+    border-color: #ff0200;
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem #f84f4c;
+}

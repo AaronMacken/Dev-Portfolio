@@ -1,0 +1,11 @@
+.image-list {
+    list-style: none;
+}
+
+.image-list--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.title {
+    font-size: 170%;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin: 4rem auto 3rem;
+}
+
+.title::after {
+    display: block;
+    height: 2px;
+    background-color: #380af2ce;
+    content: " ";
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}

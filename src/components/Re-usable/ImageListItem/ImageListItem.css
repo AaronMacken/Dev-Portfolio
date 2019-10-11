@@ -1,0 +1,11 @@
+.item {
+    margin-bottom: 2rem;
+}
+.item-title {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+.item-img {
+    object-fit: scale-down;
+}
+
