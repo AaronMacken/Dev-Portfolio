@@ -1,14 +1,22 @@
 import React, { Component } from "react";
-import Landing from "./Landing/Landing";
+import Navbar from "./Re-usable/Navbar/Navbar";
+import Main from "./Main/Main";
+import Footer from "./Re-usable/Footer/Footer";
+
+import { BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Landing />
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Main />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

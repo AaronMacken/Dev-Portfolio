@@ -26,14 +26,12 @@
     color: #080808 !important
 }
 
-a.nav-link {
+.nav-link {
     transition: all .1s;
-}
-
-a.nav-link:link, a.nav-link:visited {
     color: #767782!important;
+    cursor: pointer;
 }
 
-a.nav-link:hover, a.nav-link:active {
+.nav-link:hover, .nav-link:active {
     color: #8769ff!important;
 }

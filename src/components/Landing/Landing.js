@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../Re-usable/Navbar/Navbar";
 import Jumbo from "../Re-usable/Jumbo/Jumbo";
 import Title from "../Re-usable/Title/Title";
 import TitleAlt from "../Re-usable/Title/TitleAlt";
@@ -8,7 +7,6 @@ import ImageList from "../Re-usable/ImageList/ImageList";
 import ContentContainer from "../Re-usable/ContentContainer/ContentContainer";
 import OrangeButton from "../Re-usable/Buttons/OrangeButton/OrangeButton";
 import PurpleButton from "../Re-usable/Buttons/PurpleButton/PurpleButton";
-import Footer from "../Re-usable/Footer/Footer";
 
 import "./Landing.css";
 
@@ -30,12 +28,12 @@ export default class Landing extends Component {
           applications with a clean structure. My experience does not
           end here however, as I am also very comfortable creating web
           pages using vanilla HTML, CSS and JavaScript.`,
-        `I am able to great pixel perfect designs with custom CSS, but
+        `I am able to create pixel perfect designs with custom CSS, but
           also enjoy the ease of use from third party CSS frameworks,
           like Bootstrap. A side note, I am not a designer, but I do have a good understanding of the design principals that go into 
           creating a good looking web page. (I do my best to make these pages look good!)`,
         `I typically use Axios to make AJAX requests to the back-end,
-          but I also have used fetch and jQuery as well.`
+          but I also have used the fetch and jQuery libraries as well.`
       ]
     },
     backEndContent: {
@@ -67,12 +65,11 @@ export default class Landing extends Component {
 
     return (
       <div>
-        <Navbar />
         {/* ------------------ HEADER BEGINS ----------------- */}
         <Jumbo
           title={"Aaron Macken"}
           subTitle={"Web Developer Portfolio"}
-          btnText={"Click here to see projects"}
+          btnText={"Click Here To See Projects"}
         />
         {/* ------------------ HEADER ENDS ----------------- */}
 
@@ -98,7 +95,6 @@ export default class Landing extends Component {
           </div>
           {/* ------------------ CONTENT COLUMNS END ----------------- */}
         </main>
-        <Footer />
       </div>
     );
   }
