@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./Main.css";
 import Landing from "../Landing/Landing";
+import Contact from "../Contact/Contact";
 import { Switch, Route, withRouter, Redirect } from "react-router-dom";
 
 class Main extends Component {
@@ -10,6 +11,7 @@ class Main extends Component {
                 <Switch>
                     {/* Render a component with the react router props */}
                     <Route exact path="/" render={ props => <Landing {...props} /> }  />
+                    <Route exact path="/Contact" render={ props => <Contact {...props} /> }  />
                 </Switch>
             </div>
         )

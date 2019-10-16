@@ -7,6 +7,7 @@ import ImageList from "../Re-usable/ImageList/ImageList";
 import ContentContainer from "../Re-usable/ContentContainer/ContentContainer";
 import OrangeButton from "../Re-usable/Buttons/OrangeButton/OrangeButton";
 import PurpleButton from "../Re-usable/Buttons/PurpleButton/PurpleButton";
+import { Link } from "react-router-dom";
 
 import "./Landing.css";
 
@@ -81,8 +82,13 @@ export default class Landing extends Component {
               <SubTitle head={leftColHeader.head} body={leftColHeader.body} />
               <ImageList />
               <div className="rowWrapper">
-                <OrangeButton big text={"Contact"} />
-                <PurpleButton big text={"See Projects"} />
+                <Link to="/Contact">
+                  <OrangeButton big text={"Contact"} />
+                </Link>
+
+                <Link to="/Projects">
+                  <PurpleButton big text={"See Projects"} />
+                </Link>
               </div>
             </div>
 
