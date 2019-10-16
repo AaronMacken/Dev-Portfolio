@@ -9,7 +9,7 @@ function Navbar() {
       className="navbar navbar-expand-lg navbar-light bg-light"
       id="myNavbar"
     >
-      <p class="navbar-brand">Welcome</p>
+      <p class="navbar-brand"></p>
 
       <button
         className="navbar-toggler"

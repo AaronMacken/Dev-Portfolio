@@ -7,18 +7,18 @@ export default class Contact extends Component {
   static defaultProps = {
     listDataOne: [
       {
-        name: "React",
-        img: "/react.svg",
+        name: "253-449-6710",
+        img: "/phone.png",
         height: "150px"
       },
       {
-        name: "Redux",
-        img: "/redux.png",
+        name: "Aaron.A.Macken@gmail.com",
+        img: "/email.png",
         height: "150px"
       },
       {
-        name: "Mongo",
-        img: "/mongo.png",
+        name: "linkedin.com/in/aaronmacken/",
+        img: "/linkedin.png",
         height: "150px"
       }
     ]
@@ -28,6 +28,7 @@ export default class Contact extends Component {
     return (
       <div>
           <TitleAlt text="Contact Me"/>
+          <div style={{marginTop: "4rem"}}></div>
           <ImageList listData={listDataOne}/>
       </div>
     );

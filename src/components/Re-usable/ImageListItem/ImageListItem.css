@@ -1,11 +1,12 @@
 .item {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  min-width: 15rem;
+  max-width: 20rem;
 }
 .item-title {
-    margin-bottom: 1.5rem;
-    font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 .item-img {
-    object-fit: scale-down;
+  object-fit: scale-down;
 }
-
