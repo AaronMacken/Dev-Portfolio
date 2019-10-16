@@ -11,7 +11,7 @@ export default class ImageListItem extends Component {
         <h5 class="item-title">{text}</h5>
         <img
           className="item-img" height={height} width={width}
-          src={require(`../ImageList/${img}`)}
+          src={require(`../../../../public${img}`)}
         ></img>
       </li>
     );

@@ -53,7 +53,34 @@ export default class Landing extends Component {
           in with my own appliacations. In other words, I'm comfortable
           reading through docs!`
       ]
-    }
+    },
+    listDataOne: [
+      {
+        name: "React",
+        img: "/react.svg",
+        height: "150px"
+      },
+      {
+        name: "Redux",
+        img: "/redux.png",
+        height: "150px"
+      }
+    ],
+    listDataTwo: [
+      {
+        name: "Node",
+        img: "/node.jpg",
+        height: "150px"
+      },
+      {
+        name: "Mongo DB",
+        img: "/mongo.png",
+        height: "150px"
+      }
+    ]
+
+      
+    
   };
 
   render() {
@@ -61,7 +88,9 @@ export default class Landing extends Component {
       leftColHeader,
       rightColHeader,
       frontEndContent,
-      backEndContent
+      backEndContent,
+      listDataOne,
+      listDataTwo
     } = this.props;
 
     return (
@@ -80,7 +109,8 @@ export default class Landing extends Component {
             <div className="col-1-of-2">
               <Title text={"About Me"}></Title>
               <SubTitle head={leftColHeader.head} body={leftColHeader.body} />
-              <ImageList />
+              <ImageList listData={listDataOne}/>
+              <ImageList listData={listDataTwo}/>
               <div className="rowWrapper">
                 <Link to="/Contact">
                   <OrangeButton big text={"Contact"} />
