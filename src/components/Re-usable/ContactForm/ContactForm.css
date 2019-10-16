@@ -1,0 +1,19 @@
+.columnForm {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin: auto;
+    align-items: center;
+}
+
+.myInput {
+    margin: 1rem;
+    border: none; 
+    border-bottom:  1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.myInput:focus {
+    outline: none;
+}
