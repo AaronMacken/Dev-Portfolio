@@ -10,8 +10,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
 }
 
 button:focus {
   outline: 0;
+}
+
+a:link, a:visited {
+  color: #9a81fa;
+  transition: all .2s;
+}
+
+a:hover, a:active {
+  color: #5e39f4;
+  text-decoration: none;
 }
