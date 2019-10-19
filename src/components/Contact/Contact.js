@@ -5,6 +5,7 @@ import Title from "../Re-usable/Title/Title";
 import ImageList from "../Re-usable/ImageList/ImageList";
 import ContactForm from "../Re-usable/ContactForm/ContactForm";
 
+
 export default class Contact extends Component {
   static defaultProps = {
     listDataOne: [
@@ -38,11 +39,7 @@ export default class Contact extends Component {
         {
           name: "Company",
           type: "text"
-        },
-        {
-          name: "Message",
-          type: "text"
-        },
+        }
       ]
     }
   }
@@ -52,7 +49,11 @@ export default class Contact extends Component {
       <div>
           <TitleAlt text="Contact Me"/>
           <div style={{marginTop: "4rem"}}></div>
-          <ImageList listData={listDataOne}/>
+
+          <section className="contactInfo">
+            <ImageList listData={listDataOne}/>
+          </section>
+          
 
           <Title text="Drop Me A Line"/> 
           <ContactForm contactFormData={contactFormData}/>

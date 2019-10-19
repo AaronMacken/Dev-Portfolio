@@ -12,8 +12,21 @@
     border-bottom:  1px solid #ccc;
     padding: 1rem;
     text-align: center;
+    letter-spacing: 2.5px;
+    font-size: 105%;
 }
 
 .myInput:focus {
     outline: none;
+}
+
+.myTextArea {
+    margin-top: 1.5rem;
+    width: 40vw;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    letter-spacing: 2px;
+    font-size: 105%;
+    height: 15rem;
 }

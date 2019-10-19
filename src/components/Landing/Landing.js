@@ -109,6 +109,7 @@ export default class Landing extends Component {
               <Title text={"About Me"}></Title>
               <SubTitle head={leftColHeader.head} body={leftColHeader.body} />
               <ImageList listData={listDataOne}/>
+              <div style={{marginBottom: "5rem", backgroundColor: "pink"}}></div>
               <ImageList listData={listDataTwo}/>
               <div className="rowWrapper">
                 <Link to="/Contact">

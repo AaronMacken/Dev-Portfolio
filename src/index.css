@@ -1,3 +1,6 @@
+@import-normalize; 
+
+  
 *::after,
 *::before {
   margin: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 button:focus {
