@@ -2,35 +2,46 @@ import React, { Component } from "react";
 import "./ContactForm.css";
 import OrangeButton from "../Buttons/OrangeButton/OrangeButton";
 
+
 export default class ContactForm extends Component {
-  // This component renders a number of inputs and a button that is passed in from a prop called contactFormData
-  // this is an object that has two properties
-  // the first property is buttonText, which holds the text for the button
-  // and an array of objects that have the text for the input and the type of input that will be rendered
-  // the correct number of inputs are then rendered based on what was passed in from the parent
+  constructor(props) {
+    super(props)
+    this.state = {
+       name: '',
+       company: '',
+       email: '',
+       message: ''
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
+  
+  handleChange(e) {
+    this.setState({
+        [e.target.name]: e.target.value
+    });
+  }
 
   render() {
-    const { contactFormData } = this.props;
-    const inputs = contactFormData.inputs.map((inputItem, index) => {
-      return (
-        <input
-          placeholder={inputItem.name}
-          type={inputItem.type}
-          required
-          className="myInput"
-        ></input>
-      );
-    });
+
+    const { name, company, email, message } = this.state;
+
     return (
       <div>
         <form className="columnForm">
-          <div style={{ display: "flex", flexDirection: "row" }}>{inputs}</div>
-          <textarea className="myTextArea" placeholder="message"></textarea>
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <input type={"text"} name={"name"} placeholder={"Full Name"} value={name} className="myInput" onChange={this.handleChange}></input>
+            <input type={"text"} name={"company"} placeholder={"Company"} value={company} className="myInput" onChange={this.handleChange}></input>
+            <input type={"email"} name={"email"} placeholder={"Email"} value={email} className="myInput" onChange={this.handleChange}></input>
+          </div>
+          <textarea className="myTextArea" placeholder="message" name="message" value={message} onChange={this.handleChange}></textarea>
           <div style={{ marginTop: "2rem", marginBottom: "3rem" }}>
-            <OrangeButton text={contactFormData.buttonText} />
+            <OrangeButton text={"Submit"} />
           </div>
         </form>
       </div>
     );
   }
 }
+  
+
+

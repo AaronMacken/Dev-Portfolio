@@ -24,27 +24,10 @@ export default class Contact extends Component {
         img: "/linkedin.png",
         height: "150px"
       }
-    ],
-    contactFormData: {
-      buttonText: "Submit",
-      inputs: [
-        {
-          name: "Full Name",
-          type: "text"
-        },
-        {
-          name: "Email Address",
-          type: "email"
-        },
-        {
-          name: "Company",
-          type: "text"
-        }
-      ]
-    }
+    ]
   }
   render() {
-    const {listDataOne, contactFormData} = this.props;
+    const {listDataOne} = this.props;
     return (
       <div>
           <TitleAlt text="Contact Me"/>
@@ -54,9 +37,11 @@ export default class Contact extends Component {
             <ImageList listData={listDataOne}/>
           </section>
           
-
-          <Title text="Drop Me A Line"/> 
-          <ContactForm contactFormData={contactFormData}/>
+          <section className="contactForm">
+            <Title text="Drop Me A Line"/> 
+          <ContactForm />
+          </section>
+          
       </div>
     );
   }
