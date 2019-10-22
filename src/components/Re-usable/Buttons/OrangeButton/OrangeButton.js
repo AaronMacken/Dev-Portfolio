@@ -14,11 +14,11 @@ export default class OrangeButton extends Component {
     return (
       <div>
         {big ? (
-          <button className="orangeButton" style={biggerStyle}>
+          <button className="orangeButton" style={biggerStyle} type="submit">
             {text}
           </button>
         ) : (
-          <button className="orangeButton">{text}</button>
+          <button className="orangeButton" type="submit">{text}</button>
         )}
       </div>
     );

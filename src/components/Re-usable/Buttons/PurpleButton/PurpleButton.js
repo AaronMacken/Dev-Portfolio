@@ -18,9 +18,9 @@ export default class PurpleButton extends Component {
     return (
       <div>
         {big ? (
-          <button className="purpleButton" style={biggerStyle} >{text}</button>
+          <button className="purpleButton" style={biggerStyle} type="submit">{text}</button>
         ) : (
-          <button className="purpleButton">{text}</button>
+          <button className="purpleButton" type="submit">{text}</button>
         )}
       </div>
     );
