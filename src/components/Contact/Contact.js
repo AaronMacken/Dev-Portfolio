@@ -26,6 +26,7 @@ export default class Contact extends Component {
       }
     ]
   }
+  
   render() {
     const {listDataOne} = this.props;
     return (
@@ -34,7 +35,8 @@ export default class Contact extends Component {
           <div style={{marginTop: "4rem"}}></div>
 
           <section className="contactInfo">
-            <ImageList listData={listDataOne} click/>
+            {/* Pass a copy prop into the list, which changes the type of list item that will be rendered */}
+            <ImageList listData={listDataOne} copy/>
           </section>
           
           <section className="contactForm">
