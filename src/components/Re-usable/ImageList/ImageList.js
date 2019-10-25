@@ -11,10 +11,10 @@ import "./ImageList.css";
 
 export default class ImageList extends Component {
   render() {
-    const {listData} = this.props;
+    const {listData, click} = this.props;
     const items = listData.map((passedInProp, index) => {
       return (
-        <ImageListItem text={passedInProp.name} img={passedInProp.img} height={passedInProp.height}/>
+        <ImageListItem text={passedInProp.name} img={passedInProp.img} height={passedInProp.height} click={click}/>
       )
     })
     return (

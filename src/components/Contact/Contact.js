@@ -34,7 +34,7 @@ export default class Contact extends Component {
           <div style={{marginTop: "4rem"}}></div>
 
           <section className="contactInfo">
-            <ImageList listData={listDataOne}/>
+            <ImageList listData={listDataOne} click/>
           </section>
           
           <section className="contactForm">
