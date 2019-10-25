@@ -3,7 +3,7 @@ import "./OrangeButton.css";
 
 export default class OrangeButton extends Component {
   render() {
-    const { text, big } = this.props;
+    const { text, big, onClick } = this.props;
 
     const biggerStyle = {
       width: "15rem",
@@ -14,11 +14,11 @@ export default class OrangeButton extends Component {
     return (
       <div>
         {big ? (
-          <button className="orangeButton" style={biggerStyle} type="submit">
+          <button className="orangeButton" style={biggerStyle} type="submit" onClick={onClick}>
             {text}
           </button>
         ) : (
-          <button className="orangeButton" type="submit">{text}</button>
+          <button className="orangeButton" type="submit" onClick={onClick}>{text}</button>
         )}
       </div>
     );
