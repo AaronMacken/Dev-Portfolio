@@ -2,33 +2,15 @@ import React, { Component } from "react";
 import "./ContactForm.css";
 import OrangeButton from "../Buttons/OrangeButton/OrangeButton";
 import axios from 'axios';
-import styled from "styled-components";
+import Notification, {notifyMail} from "../Notification/Notification";
 
-
-// Container component for form submit notification
-const Container = styled.div`
-    background-color: #380af2ce;
-    border: 1px solid #380af2ce;
-    border-radius: 5px;
-    color: white;
-    padding: 16px;
-    position: fixed;
-    top: ${props => props.top}px;
-    right: 16px;
-    z-index: 999;
-    transition: top .5s ease;
-    > i {
-        margin-left: 8px;
-    }
-`;
 
 // initial state for the form
 const initialState = {
   name: "",
   company: "",
   email: "",
-  message: "",
-  top: -100
+  message: ""
 }
 
 export default class ContactForm extends Component {
@@ -36,8 +18,6 @@ export default class ContactForm extends Component {
     super(props);
     this.state = initialState;
     this.handleChange = this.handleChange.bind(this);
-    // used for clearing notification timeout
-    this.timeout = null;
   }
 
   // generic method that will update form state based off of which element is being modified
@@ -61,37 +41,9 @@ export default class ContactForm extends Component {
         console.log(res.data);
       })
     this.setState(initialState);
+    notifyMail('this is a notification');
   };
 
-  // passed to the submit button to call the showNotfication function
-  // also handles clearing timeouts in the case that the button was clicked multiple times
-  // by resetting the timeout var
-  onShow = () => {
-    if (this.timeout) {
-      clearTimeout(this.timeout);
-      this.setState(initialState, () => {
-        this.timeout = setTimeout(() => {
-          this.showNotification();
-        }, 500)
-      })
-    } else {
-      this.showNotification();
-    }
-  }
-
-  // function to show the notification div
-  // sets state from -100px to 16px from the top of the page
-  // assigns timeout variable to a set timeout function, which will call setState again
-  // to hide the div back to its original position
-  showNotification = () => {
-    this.setState({
-      top: 16
-    }, () => {
-      this.timeout = setTimeout(() => {
-        this.setState(initialState)
-      }, 3000)
-    });
-  }
 
   render() {
     // vars for form state
@@ -141,10 +93,10 @@ export default class ContactForm extends Component {
             required
           ></textarea>
           <div style={{ marginTop: "2rem", marginBottom: "3rem" }}>
-            <OrangeButton text={"Submit"} submit onClick={this.onShow}/>
+            <OrangeButton text={"Submit"} submit/>
           </div>
         </form>
-        <Container top={this.state.top}>Thanks!<i className="fas fa-paper-plane"></i></Container>
+        <Notification notificationText={"Thanks!"} icon={"fas fa-paper-plane"}/>
       </div>
       
     );

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./ImageListItem.css";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Notification, {notifyCopy} from "../Notification/Notification";
+
 
 export default class ImageListItem extends Component {
   render() {
@@ -15,13 +17,15 @@ export default class ImageListItem extends Component {
     if (copy) {
       myLi =
         <CopyToClipboard text={text}>
-          <li className="item">
+          <li className="item" onClick={() => notifyCopy('This is a notification')} >
             <h5 class="item-title">{text}</h5>
             <img
               className="item-img" height={height} width={width}
               src={require(`../../../../public${img}`)}
             ></img>
+            <Notification notificationText={"Copied!"} icon={"fas fa-copy"}/>
           </li>
+          
         </CopyToClipboard>
 
     } else {
