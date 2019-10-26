@@ -4,6 +4,7 @@ import TitleAlt from "../Re-usable/Title/TitleAlt";
 import Title from "../Re-usable/Title/Title";
 import ImageList from "../Re-usable/ImageList/ImageList";
 import ContactForm from "../Re-usable/ContactForm/ContactForm";
+import Notification from "../Re-usable/Notification/Notification";
 
 
 export default class Contact extends Component {
@@ -44,6 +45,9 @@ export default class Contact extends Component {
           <ContactForm />
           </section>
           
+          {/* Notification div, displayed when state is modified by various components that use the notify method
+          in the notification file */}
+          <Notification />
       </div>
     );
   }

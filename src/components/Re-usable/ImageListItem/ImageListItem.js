@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ImageListItem.css";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import Notification, {notifyCopy} from "../Notification/Notification";
+import {notify} from "../Notification/Notification";
 
 
 export default class ImageListItem extends Component {
@@ -12,20 +12,20 @@ export default class ImageListItem extends Component {
     // if the component recieves a copy prop, render a component that will copy the text prop to clipboard when clicked
     // this is done with the react-copy-to-clipboard package
     // wrap the component in the CopyToClipboard component & assign text value to what will be copied when clicked
-
+    // the li has an on click method which can call the notify method which translates a fixed div onto the page
+    // the params set the state for that notification's display text
     var myLi;
     if (copy) {
       myLi =
         <CopyToClipboard text={text}>
-          <li className="item" onClick={() => notifyCopy('This is a notification')} >
+          
+          <li className="item" onClick={() => notify("Copied!", "fas fa-copy")} >
             <h5 class="item-title">{text}</h5>
             <img
               className="item-img" height={height} width={width}
               src={require(`../../../../public${img}`)}
             ></img>
-            <Notification notificationText={"Copied!"} icon={"fas fa-copy"}/>
           </li>
-          
         </CopyToClipboard>
 
     } else {
@@ -38,6 +38,7 @@ export default class ImageListItem extends Component {
           ></img>
         </li>
     }
+
     return (
       <div>{myLi}</div>
     )

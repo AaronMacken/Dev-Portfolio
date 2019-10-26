@@ -4,18 +4,18 @@ import ee from "event-emitter";
 
 const initialState = {
     top: -100,
-    msg: ''
+    notificationText: "",
+    fontAwesomeName: ""
 }
 
-// The code uses the event-emitter package to make this notification accessible throughout the entire application
-// I'm not entirely sure how the syntax for event emitter actually works.. but I know that you can simply call the notify function
-// and pass a message argument to it to create a notification
+// this component creates a styled.div which is used as a template
+// it is given state of -100, to translate 100px off of the page
+// and two empty fields to store the display text and the class name for the font awesome icon
 
-// this component will take a notificationText prop and an icon prop
-// notificationText will be what text the notification displays
-// the icon prop will be the font awesome icon className 
-
-// this notification is now completely re-useable!
+// the notify event is exported to files that need to display a notification
+// it takes two args, which set the state for the display text of the component
+// this data is passed through the function calls and setState is ultimately called to translate the div
+// onto the page with the display text passed into the function
 
 // Container component for form submit notification
 const Container = styled.div`
@@ -36,53 +36,47 @@ const Container = styled.div`
 
 const emitter = new ee();
 
-export const notifyMail = (msg) => {
-    emitter.emit('notificationMail', msg)
+// notify event
+export const notify = (notificationText, fontAwesomeName) => {
+    emitter.emit('notification', notificationText, fontAwesomeName)
 }
-export const notifyCopy = (msg) => {
-    emitter.emit('notificationCopy', msg);
-}
+
 
 export default class Notification extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            top: -100,
-            msg: ''
-        }
+        this.state = initialState
         // used for clearing notification timeout
         this.timeout = null;
-        emitter.on('notificationMail', (msg) => {
-            this.onShow(msg)
-        });
-        emitter.on('notificationCopy', (msg) => {
-            this.onShow(msg)
+        // listener for a 'notification' even, triggered by the notify function
+        // calls the on show method with the passed in data
+        emitter.on('notification', (notificationText, fontAwesomeName) => {
+            this.onShow(notificationText, fontAwesomeName)
         });
     }
-    // passed to the submit button to call the showNotfication function
-    // also handles clearing timeouts in the case that the button was clicked multiple times
-    // by resetting the timeout var
-    onShow = (msg) => {
+    
+    // on show first clears any timeout and sets state to initial values to 'reset' the animation
+    // show notification is then called with the passed in data
+    onShow = (notificationText, fontAwesomeName) => {
         if (this.timeout) {
             clearTimeout(this.timeout);
             this.setState(initialState, () => {
                 this.timeout = setTimeout(() => {
-                    this.showNotification(msg);
+                    this.showNotification(notificationText, fontAwesomeName);
                 }, 500)
             })
         } else {
-            this.showNotification(msg);
+            this.showNotification(notificationText, fontAwesomeName);
         }
     }
 
-    // function to show the notification div
-    // sets state from -100px to 16px from the top of the page
-    // assigns timeout variable to a set timeout function, which will call setState again
-    // to hide the div back to its original position
-    showNotification = (msg) => {
+    // showNotification is called with the passed in data to modify the state of the component
+    // thus display the component on the screen with the appropriate passed in text and icon class name
+    showNotification = (notificationText, fontAwesomeName) => {
         this.setState({
             top: 16,
-            msg
+            notificationText: notificationText,
+            fontAwesomeName: fontAwesomeName
         }, () => {
             this.timeout = setTimeout(() => {
                 this.setState(initialState)
@@ -91,9 +85,12 @@ export default class Notification extends Component {
     }
 
     render() {
-        const {notificationText, icon} = this.props;
+        const { notificationText, fontAwesomeName } = this.state;
         return (
-           <Container top={this.state.top}>{notificationText}<i className={icon}></i></Container>
+            <div>
+                <Container top={this.state.top}>{notificationText}<i className={fontAwesomeName}></i></Container>
+            </div>
+            
         )
     }
 }

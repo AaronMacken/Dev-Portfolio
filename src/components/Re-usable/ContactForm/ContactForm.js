@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./ContactForm.css";
 import OrangeButton from "../Buttons/OrangeButton/OrangeButton";
 import axios from 'axios';
-import Notification, {notifyMail} from "../Notification/Notification";
+import {notify} from "../Notification/Notification";
 
 
 // initial state for the form
@@ -41,7 +41,9 @@ export default class ContactForm extends Component {
         console.log(res.data);
       })
     this.setState(initialState);
-    notifyMail('this is a notification');
+    // call the notify method which translates a fixed div onto the page
+    // the params set the state for that notification's display text
+    notify("Thanks", "fas fa-paper-plane");
   };
 
 
@@ -93,10 +95,9 @@ export default class ContactForm extends Component {
             required
           ></textarea>
           <div style={{ marginTop: "2rem", marginBottom: "3rem" }}>
-            <OrangeButton text={"Submit"} submit/>
+            <OrangeButton text={"Submit"} submit />
           </div>
         </form>
-        <Notification notificationText={"Thanks!"} icon={"fas fa-paper-plane"}/>
       </div>
       
     );
