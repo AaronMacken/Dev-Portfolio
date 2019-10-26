@@ -60,7 +60,7 @@ export default class Notification extends Component {
     onShow = (notificationText, fontAwesomeName) => {
         if (this.timeout) {
             clearTimeout(this.timeout);
-            this.setState(initialState, () => {
+            this.setState({top: -100, notificationText, fontAwesomeName}, () => {
                 this.timeout = setTimeout(() => {
                     this.showNotification(notificationText, fontAwesomeName);
                 }, 500)
@@ -79,7 +79,7 @@ export default class Notification extends Component {
             fontAwesomeName: fontAwesomeName
         }, () => {
             this.timeout = setTimeout(() => {
-                this.setState(initialState)
+                this.setState({top: -100, notificationText, fontAwesomeName})
             }, 3000)
         });
     }
