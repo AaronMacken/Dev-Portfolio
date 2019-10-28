@@ -17,14 +17,13 @@ export default class Carousel extends Component {
 
 
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", marginBottom: ".5rem"}}>
+                       <div>
+                        <i id="emailLogo" class="fas fa-globe-americas"></i>&nbsp;
+                        <a id="redLink" href={`${data.link}`} target="_blank">{`${data.link}`}</a>
+                    </div>
                     <div>
                         <i id="githubLogo" class="fab fa-github" style={{ fontSize: "120%", color: "#421dd8" }}></i>&nbsp;
-                        <a href={`${data.github}`}>https://github.com/AaronMacken/</a>
-                    </div>
-
-                    <div>
-                        <i id="emailLogo" class="fas fa-globe-americas"></i>&nbsp;
-                        <a id="redLink" href={`${data.link}`}>{`${data.link}`}</a>
+                        <a href={`${data.github}`} target="_blank">https://github.com/AaronMacken/</a>
                     </div>
                 </div>
 
