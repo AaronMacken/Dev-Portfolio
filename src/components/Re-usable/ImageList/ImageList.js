@@ -25,8 +25,6 @@ export default class ImageList extends Component {
         <div className="image-list--row">
           {items}
         </div>
-
-
       </ul>
     );
   }

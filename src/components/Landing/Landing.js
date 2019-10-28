@@ -78,8 +78,6 @@ export default class Landing extends Component {
         height: "150px"
       }
     ]
-
-    
   };
 
   render() {
