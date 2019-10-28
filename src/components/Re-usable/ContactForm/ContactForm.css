@@ -23,6 +23,7 @@
 .myTextArea {
     margin-top: 1.5rem;
     width: 40vw;
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding-left: 1rem;
     padding-top: .5rem;
