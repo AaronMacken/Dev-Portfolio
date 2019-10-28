@@ -34,8 +34,9 @@ export default class Contact extends Component {
       <div>
           <TitleAlt text="Contact Me"/>
           <div style={{marginTop: "4rem"}}></div>
-
+          
           <section className="contactInfo">
+            <p className="tip">(Click to copy)</p>
             {/* Pass a copy prop into the list, which changes the type of list item that will be rendered */}
             <ImageList listData={listDataOne} copy/>
           </section>
