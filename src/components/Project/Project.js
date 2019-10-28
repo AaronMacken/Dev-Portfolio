@@ -5,6 +5,8 @@ export default class Project extends Component {
     static defaultProps = {
         carOne: {
             name: "Ink City",
+            github: "https://github.com/AaronMacken/INK-City-Website",
+            link: "http://inkcity.herokuapp.com/",
             id: "1",
             img1: {
                 src: "./devport-photos/ink1.png",
@@ -21,6 +23,8 @@ export default class Project extends Component {
         },
         carTwo: {
             name: "Pomotron 9000",
+            github: "https://github.com/AaronMacken/Pomotron-Singlepage",
+            link: "http://pomotron9000.herokuapp.com/",
             id: "2",
             img1: {
                 src: "./devport-photos/pom1.png",

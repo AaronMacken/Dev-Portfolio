@@ -1,0 +1,8 @@
+#redLink {
+    color: #fd514e;
+    transition: all .2s;
+}
+
+#redLink:hover {
+    color: #ff2824;
+  }

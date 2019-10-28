@@ -1,6 +1,6 @@
 @import-normalize; 
 
-  
+*,
 *::after,
 *::before {
   margin: 0;

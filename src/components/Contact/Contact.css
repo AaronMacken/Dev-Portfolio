@@ -12,4 +12,9 @@
     top: 2rem;
     left: 50%;
     transform: translate(-50%);
+    color: #777676;
+}
+
+ul.image-list {
+    padding-left: none;
 }
