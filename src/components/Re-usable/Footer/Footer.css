@@ -26,3 +26,13 @@
   color: #eb1d1a;
   font-size: 120%;
 }
+
+@media only screen and (max-width: 650px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerRow:first-of-type {
+    margin-bottom: .5rem;
+  }
+}
+

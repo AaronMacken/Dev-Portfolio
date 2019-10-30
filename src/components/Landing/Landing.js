@@ -104,25 +104,38 @@ export default class Landing extends Component {
           {/* ------------------ CONTENT COLUMNS BEGIN ----------------- */}
           <div className="col-wrapper">
             <div className="col-1-of-2">
-              <Title text={"About Me"}></Title>
-              <SubTitle head={leftColHeader.head} body={leftColHeader.body} />
-              <ImageList listData={listDataOne}/>
-              <div style={{marginBottom: "5rem", backgroundColor: "pink"}}></div>
-              <ImageList listData={listDataTwo}/>
+              <div className="title-subTitle-wrapper">
+                <Title text={"About Me"}></Title>
+                <SubTitle head={leftColHeader.head} body={leftColHeader.body} />
+              </div>
+
+              <ImageList listData={listDataOne} />
+              <div className="marginDiv"></div>
+              <ImageList listData={listDataTwo} />
               <div className="rowWrapper">
                 <Link to="/Contact">
-                  <OrangeButton big text={"Contact"} />
+                  <OrangeButton big text={"Contact"} className="linkButton" />
                 </Link>
 
                 <Link to="/Projects">
-                  <PurpleButton big text={"See Projects"} />
+                  <PurpleButton
+                    big
+                    text={"See Projects"}
+                    className="linkButton"
+                  />
                 </Link>
               </div>
             </div>
 
             <div className="col-1-of-2">
-              <TitleAlt text={"Experience"}></TitleAlt>
-              <SubTitle head={rightColHeader.head} body={rightColHeader.body} />
+              <div className="title-subTitle-wrapper">
+                <TitleAlt text={"Experience"}></TitleAlt>
+                <SubTitle
+                  head={rightColHeader.head}
+                  body={rightColHeader.body}
+                />
+              </div>
+
               <ContentContainer content={frontEndContent} />
               <ContentContainer content={backEndContent} />
             </div>

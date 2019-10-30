@@ -48,3 +48,8 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .SubContent--contentWrapper__body {
+        font-size: 110%;
+    }
+}

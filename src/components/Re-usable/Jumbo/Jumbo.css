@@ -9,7 +9,7 @@
     background-attachment: fixed;
     margin: 3rem;
     color: #fff;
-    height: 50vh;
+    height: auto;
 }
 
 .jumbotron-contentWrapper {
@@ -57,4 +57,42 @@
     transform: translateY(0);
     box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
 }
+
+@media only screen and (max-width: 850px) {
+    .display-4 {
+        font-size: 250%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .jumbotron {
+        margin: 1rem;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .display-4 {
+        text-align: center;
+    }
+    .lead {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .display-4 {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .jumboBtn {
+        font-size: 100%;
+    }
+}
+
 
