@@ -14,3 +14,37 @@
     line-height: 1.7;
     font-size: 120%;
 }
+
+@media only screen and (max-width: 1526px) {
+    .SubContent--contentWrapper__body {
+        font-size: 110%;
+    }
+}
+
+@media only screen and (max-width: 1398px) {
+    .SubContent--contentWrapper__body {
+        font-size: 100%;
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 1398px) {
+    .SubContent--contentWrapper__body {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 1157px) {
+    .SubContent--contentWrapper__body {
+        font-size: 90%;
+        
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .SubContent--contentWrapper__body {
+        font-size: 100%;
+        width: 100%
+    }
+}
+

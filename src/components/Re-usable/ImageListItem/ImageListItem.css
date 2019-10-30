@@ -1,5 +1,7 @@
 .item {
   width: 22rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-title {

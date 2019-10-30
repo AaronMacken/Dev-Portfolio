@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Router>
         <ScrollToTop />
-        <div className="App">
+        <div className="App" style={{position: "relative"}}>
           <Navbar />
           <Main />
           <Footer />

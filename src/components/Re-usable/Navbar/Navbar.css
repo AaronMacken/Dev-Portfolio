@@ -35,3 +35,9 @@
 .nav-link:hover, .nav-link:active {
     color: #8769ff!important;
 }
+
+@media only screen and (max-width: 991px) {
+    ul.navbar-nav {
+        margin-top: 1rem;
+    }
+}
