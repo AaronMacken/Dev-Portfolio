@@ -26,7 +26,7 @@ const Container = styled.div`
     padding: 16px;
     position: fixed;
     top: ${props => props.top}px;
-    right: 16px;
+    left: 16px;
     z-index: 999;
     transition: top .5s ease;
     > i {

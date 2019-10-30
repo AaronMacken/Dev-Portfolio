@@ -9,10 +9,17 @@
     text-align: center;
 }
 
+
+@media only screen and (max-width: 1150px) {
+    .image-list--row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .image-list--row {
         flex-direction: column;
         align-items: center;
-        
     }
 }

@@ -57,7 +57,7 @@ export default class ContactForm extends Component {
           className="columnForm"
           onSubmit={this.handleSubmit}
         >
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className="inputRow">
             <input
               type={"text"}
               name={"name"}

@@ -6,7 +6,6 @@ import ImageList from "../Re-usable/ImageList/ImageList";
 import ContactForm from "../Re-usable/ContactForm/ContactForm";
 import Notification from "../Re-usable/Notification/Notification";
 
-
 export default class Contact extends Component {
   static defaultProps = {
     listDataOne: [
@@ -26,29 +25,32 @@ export default class Contact extends Component {
         height: "150px"
       }
     ]
-  }
-  
+  };
+
   render() {
-    const {listDataOne} = this.props;
+    const { listDataOne } = this.props;
     return (
       <div>
-          <TitleAlt text="Contact Me"/>
-          <div style={{marginTop: "4rem"}}></div>
-          
-          <section className="contactInfo">
-            <p className="tip">(Click to copy)</p>
-            {/* Pass a copy prop into the list, which changes the type of list item that will be rendered */}
-            <ImageList listData={listDataOne} copy/>
-          </section>
-          
-          <section className="contactForm">
-            <Title text="Drop Me A Line"/> 
+        <div className="title-subTitle-wrapper">
+          <TitleAlt text="Contact Me" />
+        </div>
+
+        <div className="contactMargin"></div>
+
+        <section className="contactInfo">
+          <p className="tip">(Click to copy)</p>
+          {/* Pass a copy prop into the list, which changes the type of list item that will be rendered */}
+          <ImageList listData={listDataOne} copy />
+        </section>
+
+        <section className="contactForm">
+          <Title text="Drop Me A Line" />
           <ContactForm />
-          </section>
-          
-          {/* Notification div, displayed when state is modified by various components that use the notify method
+        </section>
+
+        {/* Notification div, displayed when state is modified by various components that use the notify method
           in the notification file */}
-          <Notification />
+        <Notification />
       </div>
     );
   }

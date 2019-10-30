@@ -1,7 +1,6 @@
 .columnForm {
     display: flex;
     flex-direction: column;
-    width: 15rem;
     margin: auto;
     align-items: center;
 }
@@ -20,9 +19,14 @@
     outline: none;
 }
 
+.inputRow {
+    display: flex;
+    flex-direction: row;
+}
+
 .myTextArea {
     margin-top: 1.5rem;
-    width: 40vw;
+    width: 45rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-left: 1rem;
@@ -30,4 +34,20 @@
     letter-spacing: 1.5px;
     font-size: 105%;
     height: 15rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .contactMargin {
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .inputRow {
+        flex-direction: column;
+    }
+    .myTextArea {
+        width: 80vw;
+        min-width: 15rem;
+    }
 }

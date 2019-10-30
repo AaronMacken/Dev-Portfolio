@@ -9,7 +9,7 @@ function Navbar() {
       className="navbar navbar-expand-lg navbar-light bg-light"
       id="myNavbar"
     >
-      <p class="navbar-brand"></p>
+      <p class="navbar-brand">Aaron's Portfolio</p>
 
       <button
         className="navbar-toggler"
@@ -37,7 +37,11 @@ function Navbar() {
           </li>
 
           <li className="nav-item">
-            <a href="http://localhost:3001/resume" className="nav-link" download>
+            <a
+              href="http://localhost:3001/resume"
+              className="nav-link"
+              download
+            >
               Resume &nbsp;
               <i class="fas fa-file-download"></i>
             </a>

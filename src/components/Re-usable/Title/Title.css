@@ -25,5 +25,6 @@
 @media only screen and (max-width: 650px) {
     .title {
         margin-bottom: 2rem;
+        font-weight: 400;
     }
 }
