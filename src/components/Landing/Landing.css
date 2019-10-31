@@ -40,10 +40,11 @@
         height: 15rem;
         margin-top: -4rem;
         padding-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .title-subTitle-wrapper {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
         padding-bottom: 1rem;
     }
 

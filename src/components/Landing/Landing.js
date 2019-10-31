@@ -128,7 +128,7 @@ export default class Landing extends Component {
 
             <div className="col-1-of-2">
               <div className="title-subTitle-wrapper">
-                <TitleAlt text={"Experience"}></TitleAlt>
+                <TitleAlt text={"Development"}></TitleAlt>
                 <SubTitle
                   head={rightColHeader.head}
                   body={rightColHeader.body}

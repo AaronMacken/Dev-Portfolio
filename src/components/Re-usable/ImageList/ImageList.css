@@ -10,14 +10,7 @@
 }
 
 
-@media only screen and (max-width: 1150px) {
-    .image-list--row {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
     .image-list--row {
         flex-direction: column;
         align-items: center;
