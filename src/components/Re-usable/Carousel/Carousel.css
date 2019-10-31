@@ -1,8 +1,43 @@
+
 #redLink {
-    color: #fd514e;
-    transition: all .2s;
+  color: #fd514e;
+  transition: all 0.2s;
 }
 
 #redLink:hover {
-    color: #ff2824;
-  }
+  color: #ff2824;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+}
+
+.carouselContainer {
+    width: 50%;
+    height: 50%;
+    margin: 1rem auto;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .linkContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkContainer-item {
+        margin-bottom: .5rem
+    }
+
+    .carouselContainer {
+        min-width: 17rem;
+        width: 75vw;
+        height: auto;
+    }
+}
+
+
+

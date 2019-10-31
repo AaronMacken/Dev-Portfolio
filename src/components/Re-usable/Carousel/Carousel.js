@@ -12,16 +12,17 @@ export default class Carousel extends Component {
     render() {
         const { data } = this.props
         return (
-            <div style={{ width: '50%', height: '50%', margin: '1rem auto', marginBottom: "4rem" }}>
+            <div className="carouselContainer">
                 <h3 style={{ marginBottom: ".75rem", textAlign: "center", fontWeight: "200" }}>{data.name}</h3>
 
 
-                <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", marginBottom: ".5rem"}}>
-                       <div>
+                <div className="linkContainer">
+                    <div className="linkContainer-item">
                         <i id="emailLogo" class="fas fa-globe-americas"></i>&nbsp;
                         <a id="redLink" href={`${data.link}`} target="_blank">{`${data.link}`}</a>
                     </div>
-                    <div>
+
+                    <div className="linkContainer-item">
                         <i id="githubLogo" class="fab fa-github" style={{ fontSize: "120%", color: "#421dd8" }}></i>&nbsp;
                         <a href={`${data.github}`} target="_blank">https://github.com/AaronMacken/</a>
                     </div>
