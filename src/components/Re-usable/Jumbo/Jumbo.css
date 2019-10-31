@@ -21,13 +21,13 @@
 
 .display-4 {
     font-weight: 600;
-    text-shadow: 0 2rem 2rem rgba(0,0,0,.5);
+    text-shadow: 0 0 1rem rgb(63, 22, 177);
 }
 
 .lead {
     font-weight: 600;
     letter-spacing: 1px;
-    text-shadow: 0 2rem 2rem rgba(0,0,0,.5);
+    text-shadow: 0 0 1rem rgb(63, 22, 177);
 }
 
 .jumboBtn {
@@ -58,9 +58,15 @@
     box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
 }
 
+@media only screen and (max-width: 1150px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     .display-4 {
-        font-size: 250%;
+        font-size: 2.5rem;
     }
 }
 

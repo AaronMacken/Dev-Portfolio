@@ -4,6 +4,7 @@
     word-spacing: 2px;
     letter-spacing: 1px;
     margin: 4rem auto 3rem;
+    font-weight: 300;
 }
 
 .title::after {
@@ -25,6 +26,5 @@
 @media only screen and (max-width: 650px) {
     .title {
         margin-bottom: 2rem;
-        font-weight: 400;
     }
 }

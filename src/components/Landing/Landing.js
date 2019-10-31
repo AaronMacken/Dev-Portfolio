@@ -14,9 +14,8 @@ import "./Landing.css";
 export default class Landing extends Component {
   static defaultProps = {
     leftColHeader: {
-      head: "I'm a full stack developer",
-      body: `I currently build my apps using the 
-            following technologies`
+      head: "Full stack web stuff",
+      body: `Mostly done with the following technologies`
     },
     rightColHeader: {
       head: "From front to back",
