@@ -9,7 +9,8 @@ function Navbar() {
       className="navbar navbar-expand-lg navbar-light bg-light"
       id="myNavbar"
     >
-      <p class="navbar-brand">Aaron's Portfolio</p>
+      <p class="navbar-brand"  data-toggle="collapse" data-target="#navbarNav">Aaron's Portfolio</p>
+      
 
       <button
         className="navbar-toggler"
@@ -25,18 +26,36 @@ function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item">
+          {/*
+           data-toggle collapse used on li to close nav menu on link click.
+           this is normally put onto the anchor tag, 
+           but when added to react's <a></a> tag replacement (the Link component)
+           the functionality does not work. Given to parent container instead (the <li></li> tag)
+          */}
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
             <Link to="/" className="nav-link">
               About
             </Link>
           </li>
-          <li className="nav-item">
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
             <Link to="/Projects" className="nav-link">
               Projects
             </Link>
           </li>
 
-          <li className="nav-item">
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
             <a
               href="http://localhost:3001/resume"
               className="nav-link"
@@ -47,7 +66,11 @@ function Navbar() {
             </a>
           </li>
 
-          <li className="nav-item">
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
             <Link to="/Contact">
               <PurpleButton text={"Contact"} />
             </Link>

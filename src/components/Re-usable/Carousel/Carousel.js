@@ -28,11 +28,6 @@ export default class Carousel extends Component {
                     </div>
                 </div>
 
-
-
-
-
-
                 <div id={`carousel${data.id}`} class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">

@@ -6,12 +6,14 @@ import Footer from "./Re-usable/Footer/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "./Re-usable/ScrollToTop/ScrollToTop";
 
+import "./App.css";
+
 class App extends Component {
   render() {
     return (
       <Router>
         <ScrollToTop />
-        <div className="App" style={{position: "relative"}}>
+        <div className="App">
           <Navbar />
           <Main />
           <Footer />
