@@ -15,6 +15,20 @@
     margin-top: 5rem;
 }
 
+.landingMarginLeft {
+    margin-left: 2rem;
+}
+
+.landingMarginTopBig {
+   padding-top: 2rem;
+}
+.landingMarginTopMed {
+    padding-top: 0rem;
+}
+.landingMarginTopSmall {
+   padding-top: 0rem;
+}
+
 
 @media only screen and (max-width: 1150px) {
     .col-wrapper {
@@ -24,11 +38,20 @@
     .col-1-of-2 {
         width: 100%;
     }
+    .landingMarginTopMed {
+        padding-top: 3rem;
+    }
 }
 
 @media only screen and (min-width: 1150px) {
     .marginDiv {
         margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 700px){ 
+    .landingMarginTopSmall {
+        padding-top: 2rem;
     }
 }
 
@@ -48,4 +71,7 @@
         padding-bottom: 1rem;
     }
 
+    .landingMarginTopMed {
+        padding-top: 0rem;
+    }
 }

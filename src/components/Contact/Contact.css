@@ -29,4 +29,14 @@ ul.image-list {
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .contactMarginTop {
+        margin-top: 2rem;
+    }
+    
+}
+
+
+
+
 

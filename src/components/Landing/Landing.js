@@ -55,24 +55,24 @@ export default class Landing extends Component {
     },
     listDataOne: [
       {
-        name: "React",
+        title: "React",
         img: "/react.svg",
         height: "150px"
       },
       {
-        name: "Redux",
+        title: "Redux",
         img: "/redux.png",
         height: "150px"
       }
     ],
     listDataTwo: [
       {
-        name: "Node",
+        title: "Node",
         img: "/node.jpg",
         height: "150px"
       },
       {
-        name: "Mongo DB",
+        title: "Mongo DB",
         img: "/mongo.png",
         height: "150px"
       }
@@ -106,6 +106,7 @@ export default class Landing extends Component {
               <div className="title-subTitle-wrapper">
                 <Title text={"About Me"}></Title>
                 <SubTitle head={leftColHeader.head} body={leftColHeader.body} />
+                <div className="landingMarginTop"></div>
               </div>
 
               <ImageList listData={listDataOne} />
@@ -115,7 +116,7 @@ export default class Landing extends Component {
                 <Link to="/Contact">
                   <OrangeButton big text={"Contact"} className="linkButton" />
                 </Link>
-
+                <div className="landingMarginLeft"></div>
                 <Link to="/Projects">
                   <PurpleButton
                     big
@@ -128,11 +129,13 @@ export default class Landing extends Component {
 
             <div className="col-1-of-2">
               <div className="title-subTitle-wrapper">
+              <div className="landingMarginTopMed"></div>
                 <TitleAlt text={"Development"}></TitleAlt>
                 <SubTitle
                   head={rightColHeader.head}
                   body={rightColHeader.body}
                 />
+                <div className="landingMarginTopSmall"></div>
               </div>
 
               <ContentContainer content={frontEndContent} />

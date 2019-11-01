@@ -29,7 +29,7 @@
     }
 }
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 570px) {
     .SubContent--contentWrapper__body {
         white-space: normal;
     }

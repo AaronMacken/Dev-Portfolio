@@ -7,7 +7,7 @@ import {notify} from "../Notification/Notification";
 export default class ImageListItem extends Component {
   render() {
 
-    const { text, img, height, width, copy } = this.props;
+    const { copyText, title, img, height, copy } = this.props;
 
     // if the component recieves a copy prop, render a component that will copy the text prop to clipboard when clicked
     // this is done with the react-copy-to-clipboard package
@@ -17,10 +17,12 @@ export default class ImageListItem extends Component {
     var myLi;
     if (copy) {
       myLi =
-        <CopyToClipboard text={text}>
+        <CopyToClipboard text={copyText}>
           
+          {/* on click calls the notify method and passes to the rendered notification component the two string
+          values that will be used as the notification component's state */}
           <li className="item click" onClick={() => notify("Copied!", "fas fa-copy")} >
-            <h5 class="item-title">{text}</h5>
+            <h5 class="item-title">{title}</h5>
             <img
               className="item-img" height={height}
               src={require(`../../../../public${img}`)}
@@ -31,9 +33,9 @@ export default class ImageListItem extends Component {
     } else {
       myLi =
         <li className="item">
-          <h5 class="item-title">{text}</h5>
+          <h5 class="item-title">{title}</h5>
           <img
-            className="item-img" height={height} width={width}
+            className="item-img" height={height}
             src={require(`../../../../public${img}`)}
           ></img>
         </li>

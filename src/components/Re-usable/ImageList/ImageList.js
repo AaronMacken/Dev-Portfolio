@@ -14,10 +14,10 @@ import "./ImageList.css";
 
 export default class ImageList extends Component {
   render() {
-    const {listData, copy} = this.props;
+  const {listData, copy} = this.props;
     const items = listData.map((passedInProp, index) => {
       return (
-        <ImageListItem text={passedInProp.name} img={passedInProp.img} height={passedInProp.height} copy={copy}/>
+        <ImageListItem title={passedInProp.title} copyText={passedInProp.copyText} img={passedInProp.img} height={passedInProp.height} copy={copy}/>
       )
     })
     return (

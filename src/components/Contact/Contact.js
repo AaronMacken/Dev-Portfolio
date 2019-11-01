@@ -10,17 +10,20 @@ export default class Contact extends Component {
   static defaultProps = {
     listDataOne: [
       {
-        name: "253-449-6710",
+        title: "Phone",
+        copyText: "253-449-6710",
         img: "/phone.png",
         height: "150px"
       },
       {
-        name: "Aaron.A.Macken@gmail.com",
+        title: "Email",
+        copyText: "Aaron.A.Macken@gmail.com",
         img: "/email.png",
         height: "150px"
       },
       {
-        name: "linkedin.com/in/aaronmacken/",
+        title: "LinkedIn",
+        copyText: "linkedin.com/in/aaronmacken/",
         img: "/linkedin.png",
         height: "150px"
       }
@@ -31,6 +34,7 @@ export default class Contact extends Component {
     const { listDataOne } = this.props;
     return (
       <div>
+        <div className="contactMarginTop"></div>
         <div className="title-subTitle-wrapper">
           <TitleAlt text="Contact Me" />
         </div>
