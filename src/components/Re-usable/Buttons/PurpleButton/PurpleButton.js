@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./PurpleButton.css";
-import { sign } from "crypto";
 
 export default class PurpleButton extends Component {
   render() {

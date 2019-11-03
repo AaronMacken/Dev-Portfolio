@@ -1,11 +1,11 @@
-@import-normalize; 
 
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -26,6 +26,7 @@ input, textarea, button:focus {
 
 a:link, a:visited {
   color: #9a81fa;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 

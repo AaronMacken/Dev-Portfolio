@@ -24,7 +24,7 @@ export default class ImageListItem extends Component {
           <li className="item click" onClick={() => notify("Copied!", "fas fa-copy")} >
             <h5 class="item-title">{title}</h5>
             <img
-              className="item-img" height={height}
+              className="item-img" height={height} alt={`${title}`}
               src={require(`../../../../public${img}`)}
             ></img>
           </li>
@@ -35,7 +35,7 @@ export default class ImageListItem extends Component {
         <li className="item">
           <h5 class="item-title">{title}</h5>
           <img
-            className="item-img" height={height}
+            className="item-img" height={height} alt={`${title}`}
             src={require(`../../../../public${img}`)}
           ></img>
         </li>

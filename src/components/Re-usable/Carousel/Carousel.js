@@ -19,12 +19,12 @@ export default class Carousel extends Component {
                 <div className="linkContainer">
                     <div className="linkContainer-item">
                         <i id="emailLogo" class="fas fa-globe-americas"></i>&nbsp;
-                        <a id="redLink" href={`${data.link}`} target="_blank">{`${data.link}`}</a>
+                        <a id="redLink" href={`${data.link}`} target="_blank" rel="noopener noreferrer">{`${data.link}`}</a>
                     </div>
 
                     <div className="linkContainer-item">
                         <i id="githubLogo" class="fab fa-github" style={{ fontSize: "120%", color: "#421dd8" }}></i>&nbsp;
-                        <a href={`${data.github}`} target="_blank">https://github.com/AaronMacken/</a>
+                        <a href={`${data.github}`} target="_blank" rel="noopener noreferrer">https://github.com/AaronMacken/</a>
                     </div>
                 </div>
 
