@@ -57,7 +57,7 @@ function Navbar() {
             data-target="#navbarNav"
           >
             <a
-              href="http://localhost:3001/resume"
+              href="/resume"
               className="nav-link"
               download
             >
