@@ -9,7 +9,7 @@ function Navbar() {
       className="navbar navbar-expand-lg navbar-light bg-light"
       id="myNavbar"
     >
-      <p class="navbar-brand"  data-toggle="collapse" data-target="#navbarNav">Aaron's Portfolio</p>
+      <p className="navbar-brand"  data-toggle="collapse" data-target="#navbarNav">Aaron's Portfolio</p>
       
 
       <button
@@ -57,12 +57,13 @@ function Navbar() {
             data-target="#navbarNav"
           >
             <a
+            // no proxy used
               href="https://devport-back.herokuapp.com/resume"
               className="nav-link"
               download
             >
               Resume &nbsp;
-              <i class="fas fa-file-download"></i>
+              <i className="fas fa-file-download"></i>
             </a>
           </li>
 
