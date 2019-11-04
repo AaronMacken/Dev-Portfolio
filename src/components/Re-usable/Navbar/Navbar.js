@@ -57,7 +57,7 @@ function Navbar() {
             data-target="#navbarNav"
           >
             <a
-              href="/resume"
+              href="https://devport-back.herokuapp.com/resume"
               className="nav-link"
               download
             >
