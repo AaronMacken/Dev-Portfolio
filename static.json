@@ -4,9 +4,7 @@
         "/**": "index.html"
     },
     "proxies": {
-        "/resume": {
-            "origin": "https://devport-back.herokuapp.com"
-        },
+
         "/nodeMailer": {
             "origin": "https://devport-back.herokuapp.com/"
         }
