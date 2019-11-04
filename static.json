@@ -6,7 +6,7 @@
     "proxies": {
 
         "/nodeMailer": {
-            "origin": "https://devport-back.herokuapp.com/"
+            "origin": "https://devport-back.herokuapp.com/nodeMailer"
         }
     }
 }
