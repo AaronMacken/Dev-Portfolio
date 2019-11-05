@@ -15,7 +15,7 @@
     url(./blackandpurple.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin: 3rem;
     color: #fff;
     height: auto;
