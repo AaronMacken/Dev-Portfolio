@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from "../Re-usable/Carousel/Carousel";
-
+import Notification from "../Re-usable/Notification/Notification";
 export default class Project extends Component {
     static defaultProps = {
         carOne: {
@@ -45,6 +45,7 @@ export default class Project extends Component {
             <div>
                 <Carousel data={this.props.carOne}/>
                 <Carousel data={this.props.carTwo}/>
+                <Notification/>
             </div>
         )
     }

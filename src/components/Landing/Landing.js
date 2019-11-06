@@ -7,6 +7,7 @@ import ImageList from "../Re-usable/ImageList/ImageList";
 import ContentContainer from "../Re-usable/ContentContainer/ContentContainer";
 import OrangeButton from "../Re-usable/Buttons/OrangeButton/OrangeButton";
 import PurpleButton from "../Re-usable/Buttons/PurpleButton/PurpleButton";
+import Notification from "../Re-usable/Notification/Notification";
 import { Link } from "react-router-dom";
 
 import "./Landing.css";
@@ -144,6 +145,7 @@ export default class Landing extends Component {
           </div>
           {/* ------------------ CONTENT COLUMNS END ----------------- */}
         </main>
+        <Notification/>
       </div>
     );
   }

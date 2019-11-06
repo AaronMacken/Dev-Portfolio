@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Footer.css";
+import {notify} from "../Notification/Notification";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default class Footer extends Component {
   render() {
@@ -14,7 +16,10 @@ export default class Footer extends Component {
 
         <div className="footerRow">
           <i id="emailLogo" className="far fa-envelope"></i>&nbsp;
-          <p style={{marginBottom: "0", color: "#ff3935"}}>Aaron.A.Macken@gmail.com</p>
+          <CopyToClipboard text={'Aaron.A.Macken@gmail.com'}>
+            <p className="footerEmail" onClick={() => notify("Copied!", "fas fa-copy")}>Aaron.A.Macken@gmail.com</p>
+          </CopyToClipboard>
+          
         </div>
       </div>
     );

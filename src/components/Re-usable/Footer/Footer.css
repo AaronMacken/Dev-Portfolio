@@ -44,6 +44,17 @@
   font-size: 120%;
 }
 
+.footerEmail {
+  margin-bottom: 0;
+  color: #ff3935;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.footerEmail:hover, .footerEmail:active {
+  color: #eb1d1a;
+}
+
 @media only screen and (max-width: 650px) {
   .footer {
     -webkit-box-orient: vertical;
