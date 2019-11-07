@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Carousel from "../Re-usable/Carousel/Carousel";
 import Notification from "../Re-usable/Notification/Notification";
+import Modal from "../Re-usable/Modal/Modal";
+import ModalBackDrop from "../Re-usable/Modal/ModalBackDrop";
 export default class Project extends Component {
+    // Default props to pass into carousel component
     static defaultProps = {
         carOne: {
             name: "Ink City",
@@ -40,12 +43,39 @@ export default class Project extends Component {
             }
         }
     }
+
+    // State for modal
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            isShowingModal: false
+        }
+    }
+    // method for displaying modal via state change
+    // passed into carousel component's <img> tag for on click
+    openModalHandler = () => {
+        this.setState({
+            isShowingModal: true
+        });
+    }
+
+    // method for hiding modal via state change
+    // passed into the backdrop component and the close button of the modal
+    closeModalHandler = () => {
+        this.setState({
+          isShowingModal: false
+        });
+      }
+
     render() {
         return (
             <div>
-                <Carousel data={this.props.carOne}/>
-                <Carousel data={this.props.carTwo}/>
-                <Notification/>
+                <ModalBackDrop show={this.state.isShowingModal} close={this.closeModalHandler} />
+                <Modal className="modal" show={this.state.isShowingModal} close={this.closeModalHandler}></Modal>
+                <Carousel data={this.props.carOne} openModal={this.openModalHandler} />
+                <Carousel data={this.props.carTwo} openModal={this.openModalHandler} />
+                <Notification />
             </div>
         )
     }
