@@ -50,3 +50,7 @@
     height: auto;
   }
 }
+
+.w-100 {
+  cursor: pointer;
+}

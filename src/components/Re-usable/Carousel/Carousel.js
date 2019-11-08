@@ -10,7 +10,7 @@ import "./Carousel.css";
 // over individual carousels.
 export default class Carousel extends Component {
     render() {
-        const { data, openModal } = this.props
+        const { data, openModal, loadNew } = this.props
         return (
             <div className="carouselContainer">
                 <h3 style={{ marginBottom: ".75rem", textAlign: "center", fontWeight: "200" }}>{data.name}</h3>
@@ -31,15 +31,15 @@ export default class Carousel extends Component {
                 <div id={`carousel${data.id}`} className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img onClick={openModal}
+                            <img onClick={openModal, loadNew}
                             src={require(`${data.img1.src}`)} className="d-block w-100" alt={`${data.img1.alt}`} />
                         </div>
                         <div className="carousel-item">
-                            <img onClick={openModal}
+                            <img onClick={openModal, loadNew}
                             src={require(`${data.img2.src}`)} className="d-block w-100" alt={`${data.img2.alt}`} />
                         </div>
                         <div className="carousel-item">
-                            <img onClick={openModal}
+                            <img onClick={openModal, loadNew}
                             src={require(`${data.img3.src}`)} className="d-block w-100" alt={`${data.img3.alt}`} />
                         </div>
                     </div>
