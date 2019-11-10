@@ -10,6 +10,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
+  overflow-y: scroll;
+  max-height: 75vh;
 }
 
 .modal-header {
@@ -23,6 +25,7 @@
   font-weight: 300;
   margin: auto;
   padding: 0;
+  text-align: center;
 }
 
 .modal-body {
@@ -32,6 +35,7 @@
 .modal-description {
   position: relative;
   text-align: center;
+  padding-bottom: .75rem;
 }
 
 .modal-description:after {
@@ -40,9 +44,10 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  height: 1px;
-  width: 50%;
+  height: 2px;
+  width: 25%;
   transform: translate(-50%, -50%);
+  
 }
 
 .modal-list {
@@ -74,4 +79,11 @@
 
 .close-modal-btn:hover {
     color: #ee3737;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .modal-wrapper {
+      width: 70%;
+  }
 }
