@@ -7,7 +7,7 @@ export default class PurpleButton extends Component {
 
     const biggerStyle = {
         letterSpacing: "1px",
-        fontSize: "120%",
+
         fontWeight: "500",
         width: "15rem",
         height: "4rem",

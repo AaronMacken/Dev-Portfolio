@@ -17,7 +17,7 @@ export default class ImageList extends Component {
   const {listData, copy} = this.props;
     const items = listData.map((passedInProp, index) => {
       return (
-        <ImageListItem title={passedInProp.title} copyText={passedInProp.copyText} img={passedInProp.img} height={passedInProp.height} copy={copy}/>
+        <ImageListItem key={passedInProp.title} title={passedInProp.title} copyText={passedInProp.copyText} img={passedInProp.img} height={passedInProp.height} copy={copy}/>
       )
     })
     return (

@@ -77,7 +77,7 @@ export default class Project extends Component {
 }
 
   // load in data from default prop as modal state on load
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({
       isShowingModal: false,
       modalData: this.props.carOne.modalData

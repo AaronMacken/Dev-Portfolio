@@ -22,7 +22,7 @@ export default class ImageListItem extends Component {
           {/* on click calls the notify method and passes to the rendered notification component the two string
           values that will be used as the notification component's state */}
           <li className="item click" onClick={() => notify("Copied!", "fas fa-copy")} >
-            <h5 class="item-title">{title}</h5>
+            <h5 className="item-title">{title}</h5>
             <img
               className="item-img" height={height} alt={`${title}`}
               src={require(`../../../../public${img}`)}
@@ -33,7 +33,7 @@ export default class ImageListItem extends Component {
     } else {
       myLi =
         <li className="item">
-          <h5 class="item-title">{title}</h5>
+          <h5 className="item-title">{title}</h5>
           <img
             className="item-img" height={height} alt={`${title}`}
             src={require(`../../../../public${img}`)}

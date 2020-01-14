@@ -14,7 +14,7 @@ export default class ResponsiveLi extends React.Component {
         window.addEventListener("resize", this.updatePredicate);
     }
 
-    componentWillUnmount() {
+    UNSAFE_Unmount() {
         window.removeEventListener("resize", this.updatePredicate);
     }
 
