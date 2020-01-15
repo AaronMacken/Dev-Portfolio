@@ -37,6 +37,5 @@
   },
   "devDependencies": {
     "postcss-normalize": "^8.0.1"
-  },
-  "homepage" : "https://murmuring-mountain-56889.herokuapp.com/"
+  }
 }
