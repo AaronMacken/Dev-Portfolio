@@ -1,0 +1,129 @@
+.jumbotron {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.37)), to(rgb(0, 0, 0))),
+    url(./blackandpurple.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgb(0, 0, 0)),
+    url(./blackandpurple.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    margin: 3rem;
+    color: #fff;
+    height: auto;
+}
+
+.jumbotron-contentWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.display-4 {
+    font-weight: 600;
+    text-shadow: 0 0 1rem rgb(63, 22, 177);
+}
+
+.lead {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1rem rgb(63, 22, 177);
+}
+
+.jumboBtn {
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ff3935;
+    border: 1px solid #ff3935;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.jumboBtn:hover {
+    background-color: #ff0200;
+    border-color: #ff0200;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0, 0.4);
+            box-shadow: 0 1rem 2rem rgba(0,0,0, 0.4);
+}
+
+.jumboBtn:active {
+    background-color: #ff0200;
+    border-color: #ff0200;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
+}
+
+@media only screen and (max-width: 1150px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .jumbotron {
+        margin: 1rem;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .display-4 {
+        text-align: center;
+        font-weight: 500;
+    }
+    .lead {
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .display-4 {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .jumboBtn {
+        font-size: 100%;
+    }
+}
+
+

@@ -1,0 +1,34 @@
+.orangeButton {
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ff3935;
+    border: 1px solid #ff3935;
+    color: #fff;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -webkit-box-shadow: 0 1rem 1rem -10px rgba(0,0,0,.4);
+            box-shadow: 0 1rem 1rem -10px rgba(0,0,0,.4);
+    
+    letter-spacing: 1px;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.orangeButton:hover {
+    background-color: #ff0200;
+    border-color: #ff0200;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0 .75rem 2rem #f84f4c;
+            box-shadow: 0 .75rem 2rem #f84f4c;
+}
+
+.orangeButton:active {
+    background-color: #ff0200;
+    border-color: #ff0200;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: 0 0.5rem 1rem #f84f4c;
+            box-shadow: 0 0.5rem 1rem #f84f4c;
+}

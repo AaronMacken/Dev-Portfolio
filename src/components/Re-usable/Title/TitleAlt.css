@@ -1,0 +1,38 @@
+.titleAlt {
+    font-size: 170%;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin: 4rem auto 3rem;
+    font-weight: 300;
+}
+
+.titleAlt::after {
+    display: block;
+    height: 2px;
+    background-color: #ff0200;
+    content: " ";
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .titleAlt {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .titleAlt {
+        font-size: 160%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .titleAlt {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-size: 150%;
+    }
+}

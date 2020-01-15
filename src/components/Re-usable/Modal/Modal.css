@@ -1,0 +1,89 @@
+.modal-wrapper {
+  background: white;
+  border: 1px solid #d0cccc;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  margin: 0 auto;
+  transition: all 0.8s;
+  width: 40%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  overflow-y: scroll;
+  max-height: 75vh;
+}
+
+.modal-header {
+  line-height: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-header h3 {
+  font-weight: 300;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.modal-body {
+  padding: .5rem 2.5rem;
+}
+
+.modal-description {
+  position: relative;
+  text-align: center;
+  padding-bottom: .75rem;
+}
+
+.modal-description:after {
+  content: "";
+  background: #9a81fa;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.modal-list {
+    list-style: none;
+}
+
+.modal-list li::before {
+    content: "\2022";  
+    color: #fd514e; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+
+.modal-footer {
+  height: 35px;
+  padding: 15px;
+}
+
+.close-modal-btn {
+  color: #ff5555;
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  margin-top: -0.2rem;
+  transition: all .2s;
+}
+
+.close-modal-btn:hover {
+    color: #ee3737;
+}
+
+
+@media only screen and (max-width: 850px) {
+  .modal-wrapper {
+      width: 70%;
+  }
+}

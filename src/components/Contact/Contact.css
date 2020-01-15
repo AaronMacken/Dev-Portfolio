@@ -1,0 +1,51 @@
+.contactInfo {
+    background-color: #f5f5f5;
+    min-height: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+
+.tip {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    color: #777676;
+}
+
+ul.image-list {
+    padding-left: none;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .contactInfo {
+        padding-top: 4rem;
+    }
+    .tip {
+        -webkit-transform: translate(-50%, -65%);
+                transform: translate(-50%, -65%);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .contactMarginTop {
+        margin-top: 2rem;
+    }
+    
+}
+
+
+
+
+

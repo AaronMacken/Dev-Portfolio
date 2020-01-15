@@ -1,0 +1,11 @@
+{
+    "root": "build/", 
+    "routes": {
+        "/**": "index.html"
+    },
+    "proxies": {
+        "/nodeMailer": {
+            "origin": "https://sleepy-scrubland-70497.herokuapp.com/nodeMailer"
+        }
+    }
+}

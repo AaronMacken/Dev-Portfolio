@@ -1,0 +1,33 @@
+.purpleButton {
+    margin-left: auto;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #8769ff;
+    border: 1px solid #8769ff;
+    color: white;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -webkit-box-shadow: 0 1rem 1rem -10px rgba(0,0,0,.4);
+            box-shadow: 0 1rem 1rem -10px rgba(0,0,0,.4);
+    
+}
+
+
+.purpleButton:hover {
+    background-color: #380af2ce;
+    border-color: #370afc42;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0 .75rem 2rem #2c23d27a;
+            box-shadow: 0 .75rem 2rem #2c23d27a;
+}
+
+.purpleButton:active {
+    background-color: #380af2ce;
+    border-color: #370afc42;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: 0 0.5rem 1rem #2c23d285;
+            box-shadow: 0 0.5rem 1rem #2c23d285;
+}

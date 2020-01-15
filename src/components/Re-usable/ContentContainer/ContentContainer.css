@@ -1,0 +1,44 @@
+.contentContainer {
+    background-color: #e9ebee;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .contentContainer {
+        margin: 1rem 10rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contentContainer {
+        margin: 1rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contentContainer {
+        margin: 1rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .contentContainer {
+        margin-top: -2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contentContainer {
+        margin: -2rem 2rem 1rem 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .contentContainer {
+        margin: -2rem 5px 1rem 5px;
+    }
+}
