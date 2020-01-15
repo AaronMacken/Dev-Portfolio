@@ -36,7 +36,7 @@ export default class ContactForm extends Component {
     const messageData = this.state;
     // http://localhost:3001 -> dev
     // /nodeMailer -> proxied
-    axios.post('https://sleepy-scrubland-70497.herokuapp.com/nodeMailer', { messageData })
+    axios.post('/nodeMailer', { messageData })
       .then(res => {
         console.log(res);
         console.log(res.data);
