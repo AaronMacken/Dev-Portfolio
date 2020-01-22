@@ -44,7 +44,7 @@ function Navbar() {
           </ResponsiveLi>
 
           <ResponsiveLi>
-            <a href="https://sleepy-scrubland-70497.herokuapp.com/resume" className="nav-link" download>
+            <a href="https://dev-back-am.herokuapp.com/resume" className="nav-link" download>
               Resume &nbsp;
               <i className="fas fa-file-download"></i>
             </a>

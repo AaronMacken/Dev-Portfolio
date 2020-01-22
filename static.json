@@ -4,12 +4,8 @@
         "/**": "index.html"
     },
     "proxies": {
-<<<<<<< HEAD
-=======
-
->>>>>>> b4f8f64f28b6d9054eda0fc384b734732872f3a0
         "/nodeMailer": {
-            "origin": "https://sleepy-scrubland-70497.herokuapp.com/nodeMailer"
+            "origin": "https://dev-back-am.herokuapp.com/nodeMailer"
         }
     }
 }
