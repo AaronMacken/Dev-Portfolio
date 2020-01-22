@@ -3,13 +3,15 @@ import Carousel from "../Re-usable/Carousel/Carousel";
 import Notification from "../Re-usable/Notification/Notification";
 import Modal from "../Re-usable/Modal/Modal";
 import ModalBackDrop from "../Re-usable/Modal/ModalBackDrop";
+import Title from '../Re-usable/Title/Title';
+import TitleAlt from '../Re-usable/Title/TitleAlt';
 export default class Project extends Component {
   // Default props to pass into carousel component
   static defaultProps = {
     carOne: {
       name: "Ink City",
-      github: "https://github.com/AaronMacken/INK-City-Website",
-      link: "http://inkcity.herokuapp.com/",
+      github: "github.com/AaronMacken/INK-City-Website",
+      link: "inkcity.herokuapp.com/",
       id: "1",
       img1: {
         src: "./devport-photos/ink1.png",
@@ -35,8 +37,8 @@ export default class Project extends Component {
     },
     carTwo: {
       name: "Pomotron 9000",
-      github: "https://github.com/AaronMacken/Pomotron-Singlepage",
-      link: "http://pomotron9000.herokuapp.com/",
+      github: "github.com/AaronMacken/Pomotron-Singlepage",
+      link: "pomotron9000.herokuapp.com/",
       id: "2",
       img1: {
         src: "./devport-photos/pom1.png",
@@ -128,6 +130,11 @@ export default class Project extends Component {
           close={this.closeModalHandler}
           modalData={this.state.modalData}
         ></Modal>
+        <Title text="Freelance Projects" />
+        <Carousel data={this.props.carOne} openModal={this.openModalHandler} loadNew={this.loadModalDataOne}/>
+        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} loadNew={this.loadModalDataTwo}/>
+        
+        <TitleAlt text="Practice Projects"/>
         <Carousel data={this.props.carOne} openModal={this.openModalHandler} loadNew={this.loadModalDataOne}/>
         <Carousel data={this.props.carTwo} openModal={this.openModalHandler} loadNew={this.loadModalDataTwo}/>
         <Notification />

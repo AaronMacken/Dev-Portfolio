@@ -9,8 +9,8 @@ export default class Footer extends Component {
       <div className="footer">
         <div className="footerRow">
           <i id="githubLogo" className="fab fa-github"></i>&nbsp;
-          <a href="https://github.com/AaronMacken">
-            https://github.com/AaronMacken
+          <a href="https://github.com/AaronMacken" target="_blank" rel="noopener noreferrer">
+            github.com/AaronMacken
           </a>
         </div>
 
