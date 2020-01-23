@@ -5,6 +5,7 @@ import Modal from "../Re-usable/Modal/Modal";
 import ModalBackDrop from "../Re-usable/Modal/ModalBackDrop";
 import Title from '../Re-usable/Title/Title';
 import TitleAlt from '../Re-usable/Title/TitleAlt';
+import SubTitle from '../Re-usable/SubTitle/SubTitle';
 export default class Project extends Component {
   // Default props to pass into carousel component
   static defaultProps = {
@@ -67,30 +68,20 @@ export default class Project extends Component {
   // State for modal
   constructor(props) {
     super(props);
-
     this.state = {
       isShowingModal: false,
-      modalData: {}
-    };
-    
-    this.loadModalDataOne = this.loadModalDataOne.bind(this);
-    this.loadModalDataTwo = this.loadModalDataTwo.bind(this);
- 
-}
-
-  // load in data from default prop as modal state on load
-  UNSAFE_componentWillMount() {
-    this.setState({
-      isShowingModal: false,
       modalData: this.props.carOne.modalData
-    });
+    };
+    this.openModalHandler = this.openModalHandler.bind(this);
   }
+
 
   // method for displaying modal via state change
   // passed into carousel component's <img> tag for on click
-  openModalHandler = () => {
+  openModalHandler = (modalData) => {
     this.setState({
-      isShowingModal: true
+      isShowingModal: true,
+      modalData: modalData
     });
   };
 
@@ -103,20 +94,8 @@ export default class Project extends Component {
     });
   };
 
-  loadModalDataOne = () => {
-    this.setState({
-      isShowingModal: true,
-      modalData: this.props.carOne.modalData
-    });
-  };
 
-  loadModalDataTwo = () => {
-    this.setState({
-      isShowingModal: true,
-      modalData: this.props.carTwo.modalData
-    });
-  };
-
+  // modalData: this.props.carOne.modalData
   render() {
     return (
       <div>
@@ -130,13 +109,17 @@ export default class Project extends Component {
           close={this.closeModalHandler}
           modalData={this.state.modalData}
         ></Modal>
-        <Title text="Freelance Projects" />
-        <Carousel data={this.props.carOne} openModal={this.openModalHandler} loadNew={this.loadModalDataOne}/>
-        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} loadNew={this.loadModalDataTwo}/>
-        
-        <TitleAlt text="Practice Projects"/>
-        <Carousel data={this.props.carOne} openModal={this.openModalHandler} loadNew={this.loadModalDataOne}/>
-        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} loadNew={this.loadModalDataTwo}/>
+        {/* <Title text="Freelance Projects" />
+        <Carousel data={this.props.carOne} openModal={this.openModalHandler}  />
+        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} /> */}
+
+        <TitleAlt text="Practice Projects" />
+        <Carousel data={this.props.carOne} openModal={this.openModalHandler} />
+        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} />
+        <SubTitle
+          head={"These are just a few of my practice projects!"}
+          body={"Checkout the rest on github!"}
+        />
         <Notification />
       </div>
     );
