@@ -109,9 +109,10 @@ export default class Project extends Component {
           close={this.closeModalHandler}
           modalData={this.state.modalData}
         ></Modal>
-        {/* <Title text="Freelance Projects" />
+        <Title text="Freelance Projects" />
+{/*         
         <Carousel data={this.props.carOne} openModal={this.openModalHandler}  />
-        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} /> */}
+        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} />  */}
 
         <TitleAlt text="Practice Projects" />
         <Carousel data={this.props.carOne} openModal={this.openModalHandler} />
