@@ -13,7 +13,7 @@ export default class Carousel extends Component {
         const { data, openModal} = this.props
         return (
             <div className="carouselContainer">
-                <h3 style={{ marginBottom: ".75rem", textAlign: "center", fontWeight: "200" }}>{data.name}</h3>
+                <h3 className="carousel-title" style={{ marginBottom: ".75rem", textAlign: "center", fontWeight: "200" }}>{data.name}</h3>
 
                 <div className="linkContainer">
 

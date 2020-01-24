@@ -32,7 +32,7 @@ export default class Project extends Component {
         modalBullets: [
           "Pulls in instagram posts of tattos using a third party API",
           "Has a friends list feature which is controlled from a RESTful API on the back-end",
-          "Made with Node JS and Mongo DB."
+          "Made with Node JS and Mongo DB"
         ]
       }
     },
@@ -62,7 +62,89 @@ export default class Project extends Component {
           "Made with Node JS, Mongo DB and jQuery"
         ]
       }
-    }
+    },
+    carThree: {
+      name: "Hippie House e-Commerce",
+      github: "github.com/AaronMacken/e-Commerce-Front",
+      link: "hippie-house-am.herokuapp.com",
+      id: "3",
+      img1: {
+        src: "./devport-photos/hou1.png",
+        alt: "Landing Page"
+      },
+      img2: {
+        src: "./devport-photos/hou2.png",
+        alt: "Products Page"
+      },
+      img3: {
+        src: "./devport-photos/hou3.png",
+        alt: "Stripe Checkout"
+      },
+      modalData: {
+        modalTitle: "Hippie House e-Commerce",
+        modalDescription: "Application that allows for purchase and sales of CBD products from a dispensary in NC",
+        modalBullets: [
+          "Front-end application that fetches product data from back-end API and product images from Amazon S3 bucket",
+          "Uses React Stripe components to safely handle payment data from client to server",
+          "Made with React, Redux-Persist and a number of other third party packages"
+        ]
+      }
+    },
+    carFour: {
+      name: "e-Commerce Controller",
+      github: "github.com/AaronMacken/e-Commerce-Controller",
+      link: "hippie-controller-am.herokuapp.com/",
+      id: "4",
+      img1: {
+        src: "./devport-photos/con1.png",
+        alt: "Produts Page"
+      },
+      img2: {
+        src: "./devport-photos/con2.png",
+        alt: "Add Product"
+      },
+      img3: {
+        src: "./devport-photos/con3.png",
+        alt: "Edit Product"
+      },
+      modalData: {
+        modalTitle: "e-Commerce Controller",
+        modalDescription: "Application that allows admins to modify their product data",
+        modalBullets: [
+          "Front-end application that makes axios requests to a back-end API to modify product data",
+          "Includes a login system built with JWT authentication to prevent components from being displayed to non authenticated users",
+          "Made quckly with React, Redux and Material UI components"
+        ]
+      }
+    },
+    carFive: {
+      name: "e-Commerce Server",
+      github: "github.com/AaronMacken/e-Commerce-Back",
+      link: "hippie-server-am.herokuapp.com/",
+      id: "5",
+      img1: {
+        src: "./devport-photos/ser1.png",
+        alt: "Node"
+      },
+      img2: {
+        src: "./devport-photos/ser2.png",
+        alt: "Stripe"
+      },
+      img3: {
+        src: "./devport-photos/ser3.png",
+        alt: "JWT"
+      },
+      modalData: {
+        modalTitle: "e-Commerce Server",
+        modalDescription: "Back-end application that handles stripe payments and also serves product data to both front-end e-Commerce applications",
+        modalBullets: [
+          "Uses a RESTful API for front-end applications to communicate with",
+          "Uses Stripe API to safely process payments",
+          "Includes protected routes via JWT authentication middleware",
+          "Made with Node JS / Express JS and Mongo DB"
+        ]
+      }
+    },
   };
 
   // State for modal
@@ -94,8 +176,6 @@ export default class Project extends Component {
     });
   };
 
-
-  // modalData: this.props.carOne.modalData
   render() {
     return (
       <div>
@@ -110,10 +190,12 @@ export default class Project extends Component {
           modalData={this.state.modalData}
         ></Modal>
         <Title text="Freelance Projects" />
-{/*         
-        <Carousel data={this.props.carOne} openModal={this.openModalHandler}  />
-        <Carousel data={this.props.carTwo} openModal={this.openModalHandler} />  */}
 
+        
+        <Carousel data={this.props.carThree} openModal={this.openModalHandler} />
+        <Carousel data={this.props.carFour} openModal={this.openModalHandler} />
+        <Carousel data={this.props.carFive} openModal={this.openModalHandler} />
+     
         <TitleAlt text="Practice Projects" />
         <Carousel data={this.props.carOne} openModal={this.openModalHandler} />
         <Carousel data={this.props.carTwo} openModal={this.openModalHandler} />
