@@ -25,22 +25,21 @@ export default class Landing extends Component {
     frontEndContent: {
       head: "Front-end",
       body: [
-        ` I enjoy using React on the front end as it makes for scalable
-          applications with a clean structure. My experience does not
-          end here however, as I am also very comfortable creating web
-          pages using vanilla HTML, CSS and JavaScript.`,
-        `I am able to create pixel perfect designs with custom CSS, but
+        `I enjoy using React on the front end as it makes for fast applications with components I can re-use across many projects.
+        My experience does not end here however, as I am also very comfortable creating web
+          pages using regular HTML, CSS and JavaScript.`,
+        `I am able to create re-create designs with CSS / SASS, but
           also enjoy the ease of use from third party CSS frameworks,
-          like Bootstrap. A side note, I am not a designer, but I do have a good understanding of the design principals that go into 
-          creating a good looking web page. (I do my best to make these pages look good!)`,
-        `I typically use Axios to make AJAX requests to the back-end,
+          like Bootstrap or Material UI. I am not a designer, but I do have some fundamental knowledge 
+          of the design principals that go into creating a good looking web page. (I do my best to make these pages look good!)`,
+        `I typically use Axios to make AJAX requests to API end-points,
           but I also have used the fetch and jQuery libraries as well.`
       ]
     },
     backEndContent: {
       head: "Back-end",
       body: [
-        ` For my back-end, I am running Node JS with the Express
+        ` For my back-end applications, I am running Node JS with the Express
           framework and NPM as the package manger. For my database, I am
           currently using a NoSQL database, Mongo DB, with Mongoose as
           the package to connect the database to the server. While Mongo
@@ -130,7 +129,7 @@ export default class Landing extends Component {
 
             <div className="col-1-of-2">
               <div className="title-subTitle-wrapper">
-              <div className="landingMarginTopMed"></div>
+                <div className="landingMarginTopMed"></div>
                 <TitleAlt text={"Development"}></TitleAlt>
                 <SubTitle
                   head={rightColHeader.head}
@@ -145,7 +144,7 @@ export default class Landing extends Component {
           </div>
           {/* ------------------ CONTENT COLUMNS END ----------------- */}
         </main>
-        <Notification/>
+        <Notification />
       </div>
     );
   }
