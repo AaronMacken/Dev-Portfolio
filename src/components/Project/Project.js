@@ -66,7 +66,7 @@ export default class Project extends Component {
     carThree: {
       name: "Hippie House e-Commerce",
       github: "github.com/AaronMacken/e-Commerce-Front",
-      link: "hippie-house-am.herokuapp.com",
+      link: "hippiehousenc.com",
       id: "3",
       img1: {
         src: "./devport-photos/hou1.png",
