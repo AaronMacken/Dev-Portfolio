@@ -33,15 +33,15 @@ export default class Carousel extends Component {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img onClick={() => openModal(data.modalData)}
-                                src={require(`${data.img1.src}`)} className="d-block w-100" alt={`${data.img1.alt}`} />
+                                src={require(`../.././../../public${data.img1.src}`)} className="d-block w-100" alt={`${data.img1.alt}`} />
                         </div>
                         <div className="carousel-item">
                             <img onClick={() => openModal(data.modalData)}
-                                src={require(`${data.img2.src}`)} className="d-block w-100" alt={`${data.img2.alt}`} />
+                                src={require(`../.././../../public${data.img2.src}`)} className="d-block w-100" alt={`${data.img2.alt}`} />
                         </div>
                         <div className="carousel-item">
                             <img onClick={() => openModal(data.modalData)}
-                                src={require(`${data.img3.src}`)} className="d-block w-100" alt={`${data.img3.alt}`} />
+                                src={require(`../.././../../public${data.img3.src}`)} className="d-block w-100" alt={`${data.img3.alt}`} />
                         </div>
                     </div>
                     <a className="carousel-control-prev" href={`#carousel${data.id}`} role="button" data-slide="prev">

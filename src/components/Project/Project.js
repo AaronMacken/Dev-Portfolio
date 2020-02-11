@@ -15,15 +15,15 @@ export default class Project extends Component {
       link: "inkcity.herokuapp.com/",
       id: "1",
       img1: {
-        src: "./devport-photos/ink1.png",
+        src: "/ink1.png",
         alt: "InkCity Landing"
       },
       img2: {
-        src: "./devport-photos/ink2.png",
+        src: "/ink2.png",
         alt: "InkCity API"
       },
       img3: {
-        src: "./devport-photos/ink3.png",
+        src: "/ink3.png",
         alt: "InkCity Friends Feature"
       },
       modalData: {
@@ -42,15 +42,15 @@ export default class Project extends Component {
       link: "pomotron9000.herokuapp.com/",
       id: "2",
       img1: {
-        src: "./devport-photos/pom1.png",
+        src: "/pom1.png",
         alt: "Pomotron Page"
       },
       img2: {
-        src: "./devport-photos/pom2.png",
+        src: "/pom2.png",
         alt: "Pomotron Create Task"
       },
       img3: {
-        src: "./devport-photos/pom3.png",
+        src: "/pom3.png",
         alt: "Pomotron Completed Task"
       },
       modalData: {
@@ -69,15 +69,15 @@ export default class Project extends Component {
       link: "hippiehousenc.com",
       id: "3",
       img1: {
-        src: "./devport-photos/hou1.png",
+        src: "/hou1.png",
         alt: "Landing Page"
       },
       img2: {
-        src: "./devport-photos/hou2.png",
+        src: "/hou2.png",
         alt: "Products Page"
       },
       img3: {
-        src: "./devport-photos/hou3.png",
+        src: "/hou3.png",
         alt: "Stripe Checkout"
       },
       modalData: {
@@ -96,15 +96,15 @@ export default class Project extends Component {
       link: "hippie-controller-am.herokuapp.com/",
       id: "4",
       img1: {
-        src: "./devport-photos/con1.png",
+        src: "/con1.png",
         alt: "Produts Page"
       },
       img2: {
-        src: "./devport-photos/con2.png",
+        src: "/con2.png",
         alt: "Add Product"
       },
       img3: {
-        src: "./devport-photos/con3.png",
+        src: "/con3.png",
         alt: "Edit Product"
       },
       modalData: {
@@ -123,15 +123,15 @@ export default class Project extends Component {
       link: "hippie-server-am.herokuapp.com/",
       id: "5",
       img1: {
-        src: "./devport-photos/ser1.png",
+        src: "/ser1.png",
         alt: "Node"
       },
       img2: {
-        src: "./devport-photos/ser2.png",
+        src: "/ser2.png",
         alt: "Stripe"
       },
       img3: {
-        src: "./devport-photos/ser3.png",
+        src: "/ser3.png",
         alt: "JWT"
       },
       modalData: {
