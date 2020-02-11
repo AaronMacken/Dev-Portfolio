@@ -85,7 +85,7 @@ export default class Project extends Component {
         modalDescription: "Application that allows for purchase and sales of CBD products from a dispensary in NC",
         modalBullets: [
           "Front-end application that fetches product data from back-end API and product images from Amazon S3 bucket",
-          "Uses React Stripe components to safely handle payment data from client to server",
+          "Uses React Square components to handle PCI complient payments from the user",
           "Made with React, Redux-Persist and a number of other third party packages"
         ]
       }
@@ -139,7 +139,7 @@ export default class Project extends Component {
         modalDescription: "Back-end application that handles stripe payments and also serves product data to both front-end e-Commerce applications",
         modalBullets: [
           "Uses a RESTful API for front-end applications to communicate with",
-          "Uses Stripe API to safely process payments",
+          "Uses Square API to safely process payments",
           "Includes protected routes via JWT authentication middleware",
           "Made with Node JS / Express JS and Mongo DB"
         ]
