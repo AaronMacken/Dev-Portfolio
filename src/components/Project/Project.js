@@ -78,7 +78,7 @@ export default class Project extends Component {
       },
       img3: {
         src: "/hou3.png",
-        alt: "Stripe Checkout"
+        alt: "Square Checkout"
       },
       modalData: {
         modalTitle: "Hippie House e-Commerce",
@@ -128,7 +128,7 @@ export default class Project extends Component {
       },
       img2: {
         src: "/ser2.png",
-        alt: "Stripe"
+        alt: "Square"
       },
       img3: {
         src: "/ser3.png",
@@ -136,7 +136,7 @@ export default class Project extends Component {
       },
       modalData: {
         modalTitle: "e-Commerce Server",
-        modalDescription: "Back-end application that handles stripe payments and also serves product data to both front-end e-Commerce applications",
+        modalDescription: "Back-end application that handles Square payments and also serves product data to both front-end e-Commerce applications",
         modalBullets: [
           "Uses a RESTful API for front-end applications to communicate with",
           "Uses Square API to safely process payments",
